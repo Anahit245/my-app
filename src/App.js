@@ -11,12 +11,33 @@ import hugo from "./lesmiserables.jpg";
 import kafka from "./metamorphosis.jpg";
 import Home from "./Home";
 import NavBar from "./NavBar";
+import Products from "./products";
+import NotFound from "./NotFound";
+import Contact from "./contact1";
+import Page from "./page";
 
 
 import './App.css';
 
 
 function App() {
+
+	const showPage = () => {
+		if(window.location.pathname==="/") {
+			return <Home/>
+		} else if (window.location.pathname==="/products") {
+			return <Products/>
+		} 
+		else if (window.location.pathname==="/contact1"){
+			return <Contact/>
+		}
+		else if (window.location.pathname==="/page"){
+			return <Page/>
+		}
+		else {
+			return <NotFound/>
+		}
+	}
   return (
     <body>
 	<NavBar/>
@@ -24,6 +45,8 @@ function App() {
 	{/* <Router>
 		<Home path="/"/>
 	</Router> */}
+
+	{showPage()}
 
   
 

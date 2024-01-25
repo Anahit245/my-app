@@ -17,27 +17,9 @@ import  "./App.js";
 import './App.css';
 
 
-function App() {
+const Products = () => {
     return(
-<body>
-<header>
-	<div class="container">
-	<div class="header_items row">
-		<div class="header_items-logo">
-			<a href="hello.html"><img src={logo} alt="logo"/></a>
-		</div>
-		<div class="header_items-nav">
-			<ul>
-				<li><a href="hello.html" >Home Page</a></li>
-				<li><a href="products.html" class="active" >Products</a></li>
-				<li><a href="page.html" >About us</a></li>
-				<li><a href="contact.html" >Contact</a></li>
-			</ul>
-		</div>
-	</div>
-</div>
-
-</header>
+      <body>
 <main>
 	<div class="container">
 	<h1 class="new">New realised books</h1>
@@ -196,27 +178,9 @@ function App() {
 
 </div>
 </main>
-<footer>
-		<div class="container">
-	<div class="footer_items row">
-		<div class="footer_items-nav">
-			<ul>
-            <li><a href="https://www.instagram.com/" target="blank"><img src={insta} alt="insta"/></a></li>
-				<li><a href="https://www.facebook.com/"  target="blank"><img src={facebook} alt="face"/></a></li>
-				<li><a href="https://twitter.com/?lang=ru" target="blank"><img src={x} alt="x"/></a></li>
-				<li><a href="https://telegram.org/" target="blank"><img src={tg} alt="tg"/></a></li>
-			</ul>
-			</div>
-			<div class="footer_items-copyright">
-				<a href="https://www.instagram.com/" target="blank">Designed by Anahit Hakobyan</a>
-			</div>
-	</div>
-</div>
-
-</footer>
 </body>
     );
     
 }
 
-export default App;
+export default Products;

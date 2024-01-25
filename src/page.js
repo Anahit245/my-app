@@ -8,36 +8,14 @@ import pride from "./prideandprejudice.jpg";
 import obscure from "./judetheobscure.jpg";
 import hugo from "./lesmiserables.jpg";
 import kafka from "./metamorphosis.jpg";
-
+import  "./App.js";
 
 import './App.css';
 
-function App(){
-    return(
+const Page = () => {
+	return(
 
 
-
-
-
-<body>
-<header>
-	<div class="container">
-	<div class="header_items row">
-		<div class="header_items-logo">
-			<a href="hello.html"><img src={logo} alt="logo"/></a>
-		</div>
-		<div class="header_items-nav">
-			<ul>
-				<li><a href="hello.html" >Home Page</a></li>
-				<li><a href="products.html" >Products</a></li>
-				<li><a href="page.html"class="active" >About us</a></li>
-				<li><a href="contact.html" >Contact</a></li>
-			</ul>
-		</div>
-	</div>
-</div>
-
-</header>
 <main>
 	<div class="container">
 	<div class="wiki"><h1>About us</h1></div>
@@ -47,22 +25,8 @@ function App(){
 
 
 </main>
-<footer>
-		<div class="container">
-	<div class="footer_items row">
-		<div class="footer_items-nav">
-			<ul>
-            <li><a href="https://www.instagram.com/" target="blank"><img src={insta} alt="insta"/></a></li>
-				<li><a href="https://www.facebook.com/"  target="blank"><img src={facebook} alt="face"/></a></li>
-				<li><a href="https://twitter.com/?lang=ru" target="blank"><img src={x} alt="x"/></a></li>
-				<li><a href="https://telegram.org/" target="blank"><img src={tg} alt="tg"/></a></li>
-			</ul>
-			</div>
-			<div class="footer_items-copyright">
-				<a href="https://www.instagram.com/" target="blank">Designed by Anahit Hakobyan</a>
-			</div>
-	</div>
-</div>
-</footer>
-</body>
+
+
     ) } ;
+
+	export default Page;

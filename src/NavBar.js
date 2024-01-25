@@ -16,6 +16,7 @@ import './App.css';
 
 
 const NavBar = () => {
+
   return (
 <div class="container">
 		<div class="header_items row">
@@ -23,14 +24,13 @@ const NavBar = () => {
 				<a href="hello.html"><img src={logo} alt="logo"/></a>
 			</div>
 			<div class="header_items-nav">
-				{/* <Router> */}
-					{/* <li><a href="hello.html" class="active">Home Page</a></li>
+                <ul>
+                    <li><a href="hello.html" class="active">Home Page</a></li>
 					<li><a href="products.js" >Products</a></li>
 					<li><a href="page.html" >About us</a></li>
-					<li><a href="contact.html" >Contact</a></li> */}
-					{/* <Home /> */}
-				{/* </Router> */}
-                {/* <Link to="/"></Link> */}
+					<li><a href="contact.html" >Contact</a></li>
+                </ul>
+					
 
 			</div>
 		</div>
